@@ -127,7 +127,7 @@ isinstance((1,), dict) # -> False
 ```python
 from abc import ABC, abstractmethod
 
-class Number(object):
+class Number(ABC):
     # 使用装饰器修饰方法为抽象方法
     @abstractmethod
     def get_int(self):
